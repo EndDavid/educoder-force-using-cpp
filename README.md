@@ -13,4 +13,4 @@ cd educoder-force-using-cpp
 ```
 将生成出来的`codevar.c`复制粘贴到`code_submit.c`中，然后在头歌平台上提交该代码即可。
 
-相关用法已在代码中注释表明。
+相关用法已在代码中注释标明。
