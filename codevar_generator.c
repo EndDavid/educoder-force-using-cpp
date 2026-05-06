@@ -7,7 +7,7 @@
 char line[1024] = "";
 int main() {
     freopen("cppcode.cpp", "r", stdin);
-    freopen("codeval.c", "w", stdout);
+    freopen("codevar.c", "w", stdout);
 
     puts("const char cppcode[] =");
 	puts("    \"#include <cstdio>\\n\"");
