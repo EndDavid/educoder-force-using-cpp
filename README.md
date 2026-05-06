@@ -11,6 +11,6 @@ cd educoder-force-using-cpp
 ```powershell
 .\codevar_generator
 ```
-将生成出来的`codeval.c`复制粘贴到`code_submit.c`中，然后在头歌平台上提交该代码即可。
+将生成出来的`codevar.c`复制粘贴到`code_submit.c`中，然后在头歌平台上提交该代码即可。
 
 相关文件中已用注释标记清楚。
