@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <stdio.h>
-
 void print_escaped_string(const char *str) {
     if (str == NULL) return;
     
