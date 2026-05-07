@@ -39,7 +39,7 @@ int main() {
     system("g++ fc.cpp -o fc");
     
     // Get running result from pipe
-    FILE* fp = popen("fc", "r");
+    FILE* fp = popen("./fc", "r");
     char buffer[1024] = "";
     char result[4096] = "";
     while(fgets(buffer, sizeof(buffer), fp) != NULL) {
