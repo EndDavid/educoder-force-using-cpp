@@ -9,21 +9,25 @@
 const char cppcode[] =
     "#include <cstdio>\n"
     "#include <cstdlib>\n"
-    "// your cpp code, edit in IDE...\n"
-    "\n"
-    "#include <iostream>\n"
-    "\n"
-    "int main() {\n"
+	"// Your cpp code, edit in IDE...\n"
+	"\n"
+	"#include <iostream>\n"
+	"#include <algorithm>\n"
+	"\n"
+	"int main() {\n"
     "    freopen(\"fr.in\", \"r\", stdin);\n"
-    "    int a, b;\n"
-    "    std::cin >> a >> b;\n"
-    "    std::cout << a + b << '\n';\n"
-    "    return 0;\n"
-    "}\n"
+	"    int a, b;\n"
+	"    std::cin >> a >> b;\n"
+	"    std::swap(a, b);\n"
+	"    std::cout << a << \' \' << b << \'\\n\';\n"
+	"    std::cout << \"hello world\\n\";\n"
+	"    return 0;\n"
+	"}\n"
 ;
 
+
 int main() {
-    // If test, you need may need use freopen() to stdin to simulate OnlineJudge situation.
+    // If test locally, you need may need use freopen() to stdin to simulate OnlineJudge situation.
     // freopen("test.in", "r", stdin);
 
     // write "input file" to fr.in through stdin
@@ -39,7 +43,7 @@ int main() {
     system("g++ fc.cpp -o fc");
     
     // Get running result from pipe
-    FILE* fp = popen("./fc", "r");
+    FILE* fp = popen("fc", "r");
     char buffer[1024] = "";
     char result[4096] = "";
     while(fgets(buffer, sizeof(buffer), fp) != NULL) {
